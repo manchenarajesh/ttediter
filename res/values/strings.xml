@@ -1,0 +1,37 @@
+<resources>
+
+    <string name="app_name">TimeTableEditor</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_time_table_editor">Edit Time Table</string>
+
+    <string-array name="days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string name="location_label">Location</string>
+    <string name="add_buttonText">Add</string>
+    <string name="cancel_buttonText">Cancel</string>
+    <string name="title_activity_days_selector">TIme Table Editor</string>
+    <string name="day_text">Day</string>
+    <string name="done_text">Done</string>
+    <string name="course_label">Course</string>
+    <string name="title_activity_alarm">AlarmActivity</string>
+    <string name="ok_buttonText">OK</string>
+    <string name="start_time_label">Start Time</string>
+    <string name="end_time_label">End Time</string>
+    <string name="sound_label">Sound</string>
+    <string name="select_sound_buttonText">Select Sound</string>
+    <string name="edit_buttonText">Edit</string>
+    <string name="delete_buttonText">Delete</string>
+    <string name="title_activity_locations_manager">Manage Locations</string>
+    <string name="locations_label">Locations</string>
+    <string name="title_activity_name_chooser_dialog">Enter name....</string>
+	<string name="name_label">Enter a name for this location</string>
+</resources>

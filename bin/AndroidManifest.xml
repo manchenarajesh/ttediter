@@ -1,0 +1,86 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.ac.iitm.classalerts"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".TimeTableEditor"
+            android:label="@string/title_activity_time_table_editor"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="in.ac.iitm.classalerts.ADDALARM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DaysSelector"
+            android:label="@string/title_activity_days_selector" 
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AlarmActivity"
+            android:label="@string/title_activity_alarm"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver android:name=".AlarmLoader" >
+            <intent-filter>
+                <action android:name="in.ac.iitm.classalerts.updatealarm" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name=".ClassStartReciever" >
+            <intent-filter>
+                <action android:name="in.ac.iitm.classalerts.classstart" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name=".ClassEndReciever" >
+            <intent-filter>
+                <action android:name="in.ac.iitm.classalerts.classend" />
+            </intent-filter>
+        </receiver>
+        
+        <activity
+            android:name=".Locations_manager"
+            android:label="@string/title_activity_locations_manager" 
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:theme="@android:style/Theme.Dialog"
+            android:name=".NameChooserDialog"
+            android:label="@string/title_activity_name_chooser_dialog"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="in.ac.iitm.classalerts.addLocation" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

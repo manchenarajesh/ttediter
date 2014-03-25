@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical">
+		<TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:stretchColumns="0">
+    		<TableRow
+    		    android:paddingTop="30dp">
+        		<TextView
+            		android:layout_gravity="center"
+            		android:text="@string/start_time_label" />
+        		<TimePicker 
+            		android:layout_gravity="center"
+            		android:id="@+id/startTimePicker" />
+    		</TableRow>
+    		<TableRow
+    		    android:paddingTop="20dp">
+        		<TextView
+            		android:layout_gravity="center"
+            		android:text="@string/end_time_label" />
+        		<TimePicker 
+            		android:layout_gravity="center"
+            		android:id="@+id/endTimePicker"/>
+    		</TableRow>
+    		<TableRow
+        		android:paddingTop="20dp">
+        		<TextView
+            		android:layout_gravity="center"
+            		android:text="@string/course_label" />
+        		<EditText
+            		android:id="@+id/courseName"
+            		android:minWidth="225dp"
+            		android:layout_gravity="center"/>
+    		</TableRow>
+    		<TableRow 
+        		android:paddingTop="20dp">
+        		<TextView 
+            		android:layout_gravity="center"
+            		android:text="@string/location_label"/>
+        		<Spinner
+            		android:id="@+id/locationSpinner"
+            		android:minWidth="225dp"/>
+    		</TableRow>
+    		<TableRow
+    		    android:paddingTop="20dp">
+    		    <TextView
+    		        android:layout_gravity="center"
+    		        android:text="@string/sound_label"/>
+    		    <Button 
+    		        android:layout_gravity="center"
+    		        android:text="@string/select_sound_buttonText"
+    		        android:id="@+id/soundSelectButton" 
+    		        android:minWidth="225dp"/>
+    		</TableRow>
+    	</TableLayout>
+        <TableLayout
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"	>
+    		<TableRow
+    		    android:paddingTop="20dp">
+            	<Button 
+            	    android:id="@+id/okButton"
+            		android:text="@string/ok_buttonText"
+                	android:minWidth="100dp"
+                	android:layout_marginLeft="34dp"
+                	android:layout_gravity="center"/>  
+				<Button
+				    android:id="@+id/cancelButton"
+                	android:minWidth="100dp"
+                	android:layout_marginRight="34dp"
+                	android:layout_gravity="center"
+                	android:text="@string/cancel_buttonText" />
+			</TableRow>
+        </TableLayout>
+   	</LinearLayout>
+</ScrollView>
